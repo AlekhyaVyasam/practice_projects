@@ -1,0 +1,79 @@
+/* Dashboard container */
+/* Style for the download icon */
+.download-icon {
+  margin-left: 10px; /* Space between text and icon */
+  cursor: pointer; /* Pointer cursor on hover */
+  color: #007bff; /* Blue color for the icon */
+  font-size: 18px; /* Size of the icon */
+  transition: color 0.3s ease;
+}
+
+.download-icon:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.dashboard {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    min-height: 100vh; /* Full viewport height */
+    font-family: 'Arial', sans-serif; /* Default font */
+  }
+  
+  /* Dashboard heading */
+  .dashboard h1 {
+    font-size: 2rem;
+    color: #333; /* Dark gray */
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Card container for layout */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items for responsive design */
+    justify-content: center; /* Center the cards */
+    gap: 20px; /* Space between cards */
+    margin-top: 20px;
+  }
+  
+  /* Individual widget card styling */
+  .widget-card {
+    background: #ffffff; /* White background for the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 45%; /* 45% width for larger screens */
+    min-width: 300px; /* Ensure a minimum size for smaller screens */
+    padding: 20px; /* Padding inside the card */
+    text-align: left; /* Align content to the left */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+  }
+  
+  /* Hover effect for cards */
+  .widget-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  /* Card title styling */
+  .widget-card h2 {
+    font-size: 1.5rem;
+    color: #555; /* Medium gray for title */
+    margin-bottom: 20px;
+    text-align: center; /* Center title text */
+    font-weight: 600; /* Semi-bold */
+  }
+  
+  /* Chart container margin */
+  #temperature-chart, #bar-chart {
+    margin-top: 20px;
+  }
+  
+  /* Responsive design: adjust for smaller screens */
+  @media (max-width: 768px) {
+    .widget-card {
+      width: 100%; /* Full width on small screens */
+      min-width: unset; /* Remove min-width */
+    }
+  }
+  

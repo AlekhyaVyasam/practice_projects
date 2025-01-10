@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "highcharts": "^12.1.2",
+    "highcharts-react-official": "^3.2.1"
+  }
+}
